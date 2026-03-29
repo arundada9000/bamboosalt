@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nepal Bamboo Salt — Official Landing Page
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 
-First, run the development server:
+A premium, production-ready landing page built for **Nepal Bamboo Salt Pvt. Ltd.** to educate customers on the ancient benefits of roasted bamboo salt and generate direct sales via WhatsApp.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features & Implementation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js App Router**: Lightning-fast static rendering (`/` and `/shop`) optimized for SEO and Core Web Vitals.
+- **Tailwind CSS v4**: Built entirely with the newest Tailwind engine and strict custom design tokens (`@theme` in `globals.css`) matching the brand's primary green (`#296B46`).
+- **Lucide Icons**: Crisp, professional SVG icons across the interface.
+- **Fully Responsive**: Mobile-first design with a custom animated hamburger menu and scroll-aware navigation.
+- **WhatsApp Integration**: Dynamic links pre-filling customer intent automatically based on the product selected.
+- **Phase 2 Ready**: The `/shop` page acts as an expansive teaser for upcoming eCommerce features.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack & Structure
 
-## Learn More
+- **Core**: Next.js (App Router), React, TypeScript.
+- **Styling**: Tailwind v4 (`app/globals.css`).
+- **Data Source**: Centralized product mock data located at `app/data/products.ts`.
+- **Components**: Modular and reusable sections (`Navbar`, `Hero`, `Products`, `Trust`, `Benefits`, `Process`, `CTA`, `Footer`) housed in `app/components`.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌱 SEO & Meta Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses comprehensive Next.js file-based metadata out-of-the-box:
+- **`app/layout.tsx`**: Contains the full SEO configuration including `openGraph`, `twitter` cards, and keywords.
+- **`app/icon.png` / `app/apple-icon.png`**: Auto-injected as favicons.
+- **`public/images/og-image.png`**: Custom-crafted social sharing map.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏃‍♂️ Running Locally
 
-## Deploy on Vercel
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Start the Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **View Application**:
+   Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+4. **Production Build**:
+   ```bash
+   npm run build
+   npm start
+   ```
+
+---
+
+<br />
+
+<div align="center">
+  <a href="https://sajilodigital.com.np" target="_blank">
+    <img src="/images/SajiloDigital.png" alt="Sajilo Digital Logo" width="120" />
+  </a>
+  <h3>Proudly Designed & Developed by <a href="https://sajilodigital.com.np" style="color: #296B46; text-decoration: none;">Sajilo Digital</a></h3>
+  <p>YOUR VISION , OUR INNOVATION</p>
+</div>
