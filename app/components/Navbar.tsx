@@ -152,7 +152,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Links - wider spacing */}
-            <div className="hidden md:flex flex-1 justify-center items-center">
+            <div className="hidden lg:flex flex-1 justify-center items-center">
               <div className="flex items-center gap-2 lg:gap-3 bg-stone-100/50 rounded-full p-1.5 border border-stone-200/50 shadow-inner">
                 {desktopLinks.map((link) => {
                   const isActive = getIsActive(link.href);
@@ -184,7 +184,7 @@ export default function Navbar() {
                 Shop Now
               </Link>
               <button 
-                className="md:hidden p-2 text-stone-600 hover:text-[#296B46] hover:bg-stone-100 rounded-full transition-colors active:scale-95"
+                className="lg:hidden p-2 text-stone-600 hover:text-[#296B46] hover:bg-stone-100 rounded-full transition-colors active:scale-95"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
               >
@@ -198,7 +198,7 @@ export default function Navbar() {
       {/* 
         Mobile Fullscreen Overlay menu 
       */}
-      <div className={`md:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+      <div className={`lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
          <div className={`pt-24 px-6 space-y-3 transition-transform duration-500 delay-75 ${mobileMenuOpen ? "translate-y-0" : "translate-y-8"}`}>
            {desktopLinks.map((link) => {
              const isActive = getIsActive(link.href);

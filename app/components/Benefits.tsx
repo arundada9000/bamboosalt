@@ -42,7 +42,7 @@ export default function Benefits() {
           <div className="relative order-2 lg:order-1">
             <div className="relative h-[500px] lg:h-[620px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/poster1.jpeg"
+                src="/images/image.jpg"
                 alt="Health benefits of bamboo salt"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

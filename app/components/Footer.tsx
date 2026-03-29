@@ -64,10 +64,10 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#3a9962" }} />
                 <span className="text-sm leading-snug" style={{ color: "rgba(255,255,255,0.55)" }}>
-                  Bardiya badhaiyatal-08,<br />Nepal
+                  Bardiya badhaiyatal-08, Nepal
                 </span>
               </li>
-              <li className="flex flex-col gap-2 pl-7">
+              <li className="flex flex-col gap-2">
                 <a href="tel:+9779851216564" className="text-sm flex items-center gap-2 hover:text-[#3a9962] transition-colors" style={{ color: "rgba(255,255,255,0.55)" }}>
                   <Phone className="w-3.5 h-3.5" style={{ color: "#3a9962" }} /> +977-9851216564
                 </a>

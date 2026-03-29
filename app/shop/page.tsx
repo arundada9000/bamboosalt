@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Bell, ShoppingBag, Phone } from "lucide-react";
+import { ArrowLeft, Bell, ShoppingBag, Phone, ShoppingCart, TruckElectric, Wallet,WalletCards  } from "lucide-react";
 import { products } from "../data/products";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Shop | Nepal Bamboo Salt — Coming Soon",
-  description: "Our online store is coming soon. In the meantime, order via WhatsApp or call us directly.",
+  description:
+    "Our online store is coming soon. In the meantime, order via WhatsApp or call us directly.",
 };
 
 function WhatsAppIcon() {
@@ -38,7 +39,8 @@ export default function ShopPage() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: "radial-gradient(ellipse at 50% 50%, rgba(41,107,70,0.35) 0%, transparent 70%)",
+            background:
+              "radial-gradient(ellipse at 50% 50%, rgba(41,107,70,0.35) 0%, transparent 70%)",
           }}
         />
 
@@ -54,7 +56,10 @@ export default function ShopPage() {
           {/* Badge */}
           <span
             className="inline-block text-xs font-bold tracking-widest uppercase mb-5 px-4 py-1.5 rounded-full border border-white/20"
-            style={{ color: "#d4a853", backgroundColor: "rgba(255,255,255,0.08)" }}
+            style={{
+              color: "#d4a853",
+              backgroundColor: "rgba(255,255,255,0.08)",
+            }}
           >
             Phase 2 — Coming Soon
           </span>
@@ -63,14 +68,21 @@ export default function ShopPage() {
             Our Online Store is <br />
             <span
               className="text-transparent bg-clip-text"
-              style={{ backgroundImage: "linear-gradient(to right, #f0d49a, #d4a853)" }}
+              style={{
+                backgroundImage: "linear-gradient(to right, #f0d49a, #d4a853)",
+              }}
             >
               Coming Soon
             </span>
           </h1>
 
-          <p className="text-lg mb-10 leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.7)" }}>
-            We&apos;re building a beautiful online store with cart, secure payments (eSewa, Khalti, PayPal), and fast delivery across Nepal. Until then, order directly via WhatsApp!
+          <p
+            className="text-lg mb-10 leading-relaxed max-w-xl mx-auto"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            We&apos;re building a beautiful online store with cart, secure
+            payments (eSewa, Khalti, PayPal), and fast delivery across Nepal.
+            Until then, order directly via WhatsApp!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -78,8 +90,7 @@ export default function ShopPage() {
               href="https://wa.me/9779851216564?text=Please%20notify%20me%20when%20the%20Nepal%20Bamboo%20Salt%20online%20store%20is%20live"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 hover:opacity-90"
-              style={{ backgroundColor: "#296B46" }}
+              className="flex items-center gap-2 text-white px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 bg-[#296B46] hover:bg-[#36895a]"
             >
               <Bell className="w-4 h-4" />
               Notify Me When Live
@@ -104,7 +115,10 @@ export default function ShopPage() {
           <h2 className="text-3xl font-extrabold text-stone-900 mt-4 mb-3">
             Products Available Right Now
           </h2>
-          <p className="text-stone-500">Browse our collection and place your order instantly through WhatsApp.</p>
+          <p className="text-stone-500">
+            Browse our collection and place your order instantly through
+            WhatsApp.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -128,10 +142,17 @@ export default function ShopPage() {
                 )}
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="font-extrabold text-stone-900 text-lg mb-2">{product.name}</h3>
-                <p className="text-stone-500 text-sm mb-4 flex-1">{product.shortDescription}</p>
+                <h3 className="font-extrabold text-stone-900 text-lg mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-stone-500 text-sm mb-4 flex-1">
+                  {product.shortDescription}
+                </p>
                 <p className="text-xs text-stone-400 mb-5">
-                  <span className="font-bold text-stone-700">Available weights: </span>{product.weight}
+                  <span className="font-bold text-stone-700">
+                    Available weights:{" "}
+                  </span>
+                  {product.weight}
                 </p>
                 <a
                   href={getWhatsAppUrl(product.name)}
@@ -149,23 +170,32 @@ export default function ShopPage() {
       </div>
 
       {/* Phase 2 Features */}
-      <div className="border-t border-stone-200 py-16" style={{ backgroundColor: "#edf7f1" }}>
+      <div
+        className="border-t border-stone-200 py-16"
+        style={{ backgroundColor: "#edf7f1" }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-extrabold text-stone-900 mb-3">What&apos;s Coming in Phase 2</h2>
-          <p className="text-stone-500 mb-10">Our full-featured online store is on its way.</p>
+          <h2 className="text-2xl font-extrabold text-stone-900 mb-3">
+            What&apos;s Coming in Phase 2
+          </h2>
+          <p className="text-stone-500 mb-10">
+            Our full-featured online store is on its way.
+          </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
             {[
-              { label: "Shopping Cart",    icon: "🛒" },
-              { label: "eSewa / Khalti",   icon: "💳" },
-              { label: "PayPal",           icon: "🌐" },
-              { label: "Fast Delivery",    icon: "🚀" },
+              { label: "Shopping Cart", icon: <ShoppingCart/> },
+              { label: "eSewa / Khalti", icon: <Wallet/> },
+              { label: "IME", icon: <WalletCards/> },
+              { label: "Fast Delivery", icon: <TruckElectric/> },
             ].map(({ label, icon }) => (
               <div
                 key={label}
                 className="bg-white rounded-2xl border border-[#c6ecd7] p-5 flex flex-col items-center gap-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
               >
-                <span className="text-3xl">{icon}</span>
-                <span className="text-sm font-bold text-stone-900">{label}</span>
+                <span className="text-3xl text-primary">{icon}</span>
+                <span className="text-sm font-bold text-stone-900">
+                  {label}
+                </span>
               </div>
             ))}
           </div>

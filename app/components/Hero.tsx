@@ -4,11 +4,11 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/og-image.png"
+          src="/images/hero-image.jpg"
           alt="Premium Bamboo Salt from Nepal"
           fill
           className="object-cover object-center"
@@ -26,12 +26,12 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-sm font-semibold mb-8 uppercase tracking-widest">
+        <div className="inline-flex md:mt-7 items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-sm font-semibold mb-8 uppercase tracking-widest">
           <span className="w-2 h-2 rounded-full bg-[#d4a853] inline-block animate-pulse" />
           100% Natural · Made in Nepal 🇳🇵
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight leading-[1.05]">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6  tracking-tight leading-[1.05]">
           Premium{" "}
           <span
             className="text-transparent bg-clip-text"
@@ -44,7 +44,8 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-          Ancient roasting process. Modern health benefits. Detoxify and restore your body&apos;s balance — naturally.
+          Naturally processed, mineral-rich bamboo salt crafted using traditional techniques for better health 
+and taste.
         </p>
 
         {/* CTA Buttons */}

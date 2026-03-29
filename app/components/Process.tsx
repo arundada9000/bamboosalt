@@ -13,7 +13,7 @@ const steps = [
     num: "02",
     title: "Sealed with Clay",
     desc: "Both ends are sealed using mineral-rich mountain clay, creating a pressurized roasting chamber.",
-    img: "/images/poster.jpeg",
+    img: "/images/image4.jpg",
     Icon: Cylinder,
   },
   {
