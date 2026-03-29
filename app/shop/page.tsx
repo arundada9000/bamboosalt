@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Bell, ShoppingBag, Phone, ShoppingCart, TruckElectric, Wallet,WalletCards  } from "lucide-react";
+import {
+  ArrowLeft,
+  Bell,
+  ShoppingBag,
+  Phone,
+  ShoppingCart,
+  TruckElectric,
+  Wallet,
+  WalletCards,
+} from "lucide-react";
 import { products } from "../data/products";
 import type { Metadata } from "next";
 
@@ -183,10 +192,10 @@ export default function ShopPage() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
             {[
-              { label: "Shopping Cart", icon: <ShoppingCart/> },
-              { label: "eSewa / Khalti", icon: <Wallet/> },
-              { label: "IME", icon: <WalletCards/> },
-              { label: "Fast Delivery", icon: <TruckElectric/> },
+              { label: "Shopping Cart", icon: <ShoppingCart /> },
+              { label: "eSewa / Khalti", icon: <Wallet /> },
+              { label: "IME", icon: <WalletCards /> },
+              { label: "Fast Delivery", icon: <TruckElectric /> },
             ].map(({ label, icon }) => (
               <div
                 key={label}

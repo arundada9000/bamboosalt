@@ -35,7 +35,9 @@ export default function Hero() {
           Premium{" "}
           <span
             className="text-transparent bg-clip-text"
-            style={{ backgroundImage: "linear-gradient(to right, #f0d49a, #d4a853)" }}
+            style={{
+              backgroundImage: "linear-gradient(to right, #f0d49a, #d4a853)",
+            }}
           >
             Bamboo Salt
           </span>
@@ -44,8 +46,8 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-          Naturally processed, mineral-rich bamboo salt crafted using traditional techniques for better health 
-and taste.
+          Naturally processed, mineral-rich bamboo salt crafted using
+          traditional techniques for better health and taste.
         </p>
 
         {/* CTA Buttons */}
@@ -68,7 +70,9 @@ and taste.
 
         {/* Scroll hint */}
         <div className="mt-20 flex flex-col items-center gap-2 opacity-50">
-          <span className="text-xs uppercase tracking-widest">Scroll to explore</span>
+          <span className="text-xs uppercase tracking-widest">
+            Scroll to explore
+          </span>
           <div className="w-px h-12 bg-gradient-to-b from-white to-transparent" />
         </div>
       </div>

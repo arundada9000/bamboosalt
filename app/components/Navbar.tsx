@@ -7,20 +7,20 @@ import { usePathname, useRouter } from "next/navigation";
 import { Home, Package, Info, ShoppingBag, Phone, Menu, X } from "lucide-react";
 
 const desktopLinks = [
-  { label: "Home",     href: "/" },
-  { label: "About",    href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Products", href: "/#products" },
   { label: "Benefits", href: "/#benefits" },
-  { label: "Process",  href: "/#process" },
-  { label: "Contact",  href: "/#contact" },
+  { label: "Process", href: "/#process" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const mobileLinks = [
-  { label: "Home",     href: "/",        icon: Home },
+  { label: "Home", href: "/", icon: Home },
   { label: "Products", href: "/#products", icon: Package },
-  { label: "Shop",     href: "/shop",    icon: ShoppingBag },
-  { label: "About",    href: "/about",   icon: Info },
-  { label: "Contact",  href: "/#contact",  icon: Phone },
+  { label: "Shop", href: "/shop", icon: ShoppingBag },
+  { label: "About", href: "/about", icon: Info },
+  { label: "Contact", href: "/#contact", icon: Phone },
 ];
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    
+
     // 2. Setup IntersectionObserver for precise section tracking
     const observerOptions = {
       root: null,
@@ -56,10 +56,15 @@ export default function Navbar() {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions,
+    );
 
     // Observe all sections with IDs
-    const sections = document.querySelectorAll("section[id], footer[id], div[id]");
+    const sections = document.querySelectorAll(
+      "section[id], footer[id], div[id]",
+    );
     sections.forEach((section) => observer.observe(section));
 
     // Handle initial hash check
@@ -88,7 +93,10 @@ export default function Navbar() {
     return pathname.startsWith(href) && href !== "/";
   };
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     // Smooth scrolling for "Home" button if already on Home page
     if (href === "/" && pathname === "/") {
       e.preventDefault();
@@ -132,8 +140,8 @@ export default function Navbar() {
         <div className="px-4 sm:px-6 md:px-5 lg:px-6">
           <div className="flex items-center justify-between h-16 md:h-[70px] gap-4">
             {/* Logo */}
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               onClick={(e) => handleLinkClick(e, "/")}
               className="flex items-center gap-3 group shrink-0"
             >
@@ -147,7 +155,9 @@ export default function Navbar() {
                 />
               </div>
               <div className="hidden sm:block leading-none">
-                <span className="font-extrabold text-base lg:text-lg text-stone-900 block group-hover:text-[#296B46] transition-colors">Nepal Bamboo Salt</span>
+                <span className="font-extrabold text-base lg:text-lg text-stone-900 block group-hover:text-[#296B46] transition-colors">
+                  Nepal Bamboo Salt
+                </span>
               </div>
             </Link>
 
@@ -183,12 +193,16 @@ export default function Navbar() {
                 <ShoppingBag className="w-4 h-4 group-hover:-rotate-12 transition-transform duration-300" />
                 Shop Now
               </Link>
-              <button 
+              <button
                 className="lg:hidden p-2 text-stone-600 hover:text-[#296B46] hover:bg-stone-100 rounded-full transition-colors active:scale-95"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
@@ -198,34 +212,40 @@ export default function Navbar() {
       {/* 
         Mobile Fullscreen Overlay menu 
       */}
-      <div className={`lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-         <div className={`pt-24 px-6 space-y-3 transition-transform duration-500 delay-75 ${mobileMenuOpen ? "translate-y-0" : "translate-y-8"}`}>
-           {desktopLinks.map((link) => {
-             const isActive = getIsActive(link.href);
-             return (
-               <Link
-                 key={link.href}
-                 href={link.href}
-                 onClick={(e) => handleLinkClick(e, link.href)}
-                 className={`block text-2xl font-extrabold pb-4 border-b border-stone-100 transition-colors ${
-                   isActive ? "text-[#296B46]" : "text-stone-700 hover:text-stone-900"
-                 }`}
-               >
-                 {link.label}
-               </Link>
-             );
-           })}
-           <div className="pt-6 pb-24">
-             <Link
-                href="/shop"
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 bg-[#296B46] text-white px-6 py-4 rounded-full font-bold w-full text-lg shadow-lg shadow-[#296B46]/30 active:scale-95 transition-all"
+      <div
+        className={`lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+      >
+        <div
+          className={`pt-24 px-6 space-y-3 transition-transform duration-500 delay-75 ${mobileMenuOpen ? "translate-y-0" : "translate-y-8"}`}
+        >
+          {desktopLinks.map((link) => {
+            const isActive = getIsActive(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleLinkClick(e, link.href)}
+                className={`block text-2xl font-extrabold pb-4 border-b border-stone-100 transition-colors ${
+                  isActive
+                    ? "text-[#296B46]"
+                    : "text-stone-700 hover:text-stone-900"
+                }`}
               >
-                <ShoppingBag className="w-5 h-5" />
-                Visit Shop
+                {link.label}
               </Link>
-           </div>
-         </div>
+            );
+          })}
+          <div className="pt-6 pb-24">
+            <Link
+              href="/shop"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-[#296B46] text-white px-6 py-4 rounded-full font-bold w-full text-lg shadow-lg shadow-[#296B46]/30 active:scale-95 transition-all"
+            >
+              <ShoppingBag className="w-5 h-5" />
+              Visit Shop
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* 
@@ -247,15 +267,19 @@ export default function Navbar() {
                 {isActive && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-1 bg-[#296B46] rounded-b-full shadow-[0_2px_8px_rgba(41,107,70,0.5)] transition-all duration-300" />
                 )}
-                <div className={`p-1.5 rounded-xl transition-all duration-300 ease-out ${isActive ? 'scale-110 mb-0.5' : 'text-stone-500 group-hover:text-stone-800 group-hover:scale-105 group-hover:bg-black/5'}`}>
-                  <Icon 
-                    className={`w-[22px] h-[22px] transition-colors duration-300 ${isActive ? 'text-[#296B46]' : ''}`} 
-                    strokeWidth={isActive ? 2.5 : 2} 
+                <div
+                  className={`p-1.5 rounded-xl transition-all duration-300 ease-out ${isActive ? "scale-110 mb-0.5" : "text-stone-500 group-hover:text-stone-800 group-hover:scale-105 group-hover:bg-black/5"}`}
+                >
+                  <Icon
+                    className={`w-[22px] h-[22px] transition-colors duration-300 ${isActive ? "text-[#296B46]" : ""}`}
+                    strokeWidth={isActive ? 2.5 : 2}
                   />
                 </div>
-                <span 
+                <span
                   className={`text-[10px] font-bold tracking-tight transition-all duration-300 ${
-                    isActive ? "text-[#296B46] translate-y-0" : "text-stone-500 -translate-y-0.5"
+                    isActive
+                      ? "text-[#296B46] translate-y-0"
+                      : "text-stone-500 -translate-y-0.5"
                   }`}
                 >
                   {link.label}

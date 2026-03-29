@@ -102,7 +102,7 @@ export default function Products() {
                     href="/shop"
                     className="flex items-center group justify-center gap-2 bg-[#edf7f1] text-[#296B46] border border-[#c6ecd7] py-3 rounded-xl font-bold text-sm hover:bg-[#296B46]/10 transition-all duration-300 active:scale-95"
                   >
-                    <ShoppingBag /> View 
+                    <ShoppingBag /> View
                   </Link>
                 </div>
               </div>
