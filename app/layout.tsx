@@ -24,14 +24,12 @@ export const metadata: Metadata = {
     "Alkaline Salt",
   ],
   authors: [{ name: "Nepal Bamboo Salt Pvt. Ltd." }],
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "bamboosalt.com"),
   openGraph: {
     title: "Premium Bamboo Salt from Nepal | Nepal Bamboo Salt",
     description:
       "Ancient roasting process. Modern health benefits. Detoxify and improve health with 100% natural Nepal Bamboo Salt.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "bamboosalt.com",
     siteName: "Nepal Bamboo Salt",
     images: [
       {
