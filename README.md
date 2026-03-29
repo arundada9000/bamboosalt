@@ -6,6 +6,8 @@
 
 A premium, production-ready landing page built for **Nepal Bamboo Salt Pvt. Ltd.** to educate customers on the ancient benefits of roasted bamboo salt and generate direct sales via WhatsApp.
 
+Visit at : bamboosalt.sajilodigital.com.np
+
 ---
 
 ## Features & Implementation
@@ -27,6 +29,7 @@ A premium, production-ready landing page built for **Nepal Bamboo Salt Pvt. Ltd.
 ## 🌱 SEO & Meta Configuration
 
 This project uses comprehensive Next.js file-based metadata out-of-the-box:
+
 - **`app/layout.tsx`**: Contains the full SEO configuration including `openGraph`, `twitter` cards, and keywords.
 - **`app/icon.png` / `app/apple-icon.png`**: Auto-injected as favicons.
 - **`public/images/og-image.png`**: Custom-crafted social sharing map.
@@ -34,11 +37,13 @@ This project uses comprehensive Next.js file-based metadata out-of-the-box:
 ## Running Locally
 
 1. **Install Dependencies**:
+
    ```bash
    npm install
    ```
 
 2. **Start the Development Server**:
+
    ```bash
    npm run dev
    ```
