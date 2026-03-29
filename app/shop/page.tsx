@@ -17,6 +17,8 @@ function WhatsAppIcon() {
   );
 }
 
+import Navbar from "../components/Navbar";
+
 export default function ShopPage() {
   const getWhatsAppUrl = (productName: string) => {
     const message = encodeURIComponent(`Hi! I want to order ${productName}`);
@@ -25,24 +27,7 @@ export default function ShopPage() {
 
   return (
     <div className="min-h-screen bg-[#faf9f7]">
-      {/* Navbar */}
-      <nav className="bg-white border-b border-stone-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[72px]">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden">
-              <Image src="/images/circular-logo.png" alt="Nepal Bamboo Salt" fill className="object-cover" />
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-extrabold text-stone-900 block">Nepal Bamboo Salt</span>
-              <span className="text-xs text-[#296B46] font-semibold tracking-widest uppercase">Pvt. Ltd.</span>
-            </div>
-          </Link>
-          <Link href="/" className="flex items-center gap-2 text-sm text-stone-500 hover:text-[#296B46] transition-colors font-medium">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Banner — dark green with inline style */}
       <div

@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutShort from './components/AboutShort';
 import Trust from './components/Trust';
 import Products from './components/Products';
 import Benefits from './components/Benefits';
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <AboutShort />
         <Trust />
         <Products />
         <Benefits />
