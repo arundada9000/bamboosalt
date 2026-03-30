@@ -17,7 +17,7 @@ export default function AboutPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-[#1b4a30] text-center text-white">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-[#1b4a30] text-center text-white min-h-screen">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
