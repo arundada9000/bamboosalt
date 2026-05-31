@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
-import { BUSINESS } from "../data/contact";
+import { BUSINESS, AUTHOR } from "../data/contact";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -176,17 +176,34 @@ export default function Footer() {
           }}
         >
           <p>
-            &copy; {new Date().getFullYear()} {BUSINESS.nameFull} All
+            &copy; {new Date().getFullYear()} {BUSINESS.nameFull}. All
             rights reserved.
           </p>
-          <div className="flex gap-6">
-            <span className="hover:text-white/70 transition-colors cursor-pointer">
-              Privacy Policy
-            </span>
-            <span className="hover:text-white/70 transition-colors cursor-pointer">
-              Terms of Service
-            </span>
-          </div>
+          <p>
+            Developed by{" "}
+            <a
+              href={AUTHOR.portfolio}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#3a9962] transition-colors"
+            >
+              {AUTHOR.name}
+            </a>{" "}
+            &mdash;{" "}
+            <a
+              href={`tel:+${AUTHOR.phoneRaw}`}
+              className="hover:text-[#3a9962] transition-colors"
+            >
+              {AUTHOR.phone}
+            </a>{" "}
+            &middot;{" "}
+            <a
+              href={`mailto:${AUTHOR.email}`}
+              className="hover:text-[#3a9962] transition-colors"
+            >
+              Email
+            </a>
+          </p>
         </div>
       </div>
     </footer>
