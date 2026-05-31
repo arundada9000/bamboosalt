@@ -176,50 +176,7 @@ export default function Footer() {
                   Portfolio
                 </a>
               </li>
-              <li>
-                <a
-                  href={AUTHOR.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm hover:text-[#3a9962] transition-colors"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href={AUTHOR.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm hover:text-[#3a9962] transition-colors"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  YouTube
-                </a>
-              </li>
-              <li>
-                <a
-                  href={AUTHOR.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm hover:text-[#3a9962] transition-colors"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href={AUTHOR.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm hover:text-[#3a9962] transition-colors"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  Instagram
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>

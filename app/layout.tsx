@@ -37,15 +37,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Arun Neupane" }],
   creator: "Arun Neupane",
   publisher: "Arun Neupane",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://arunbamboosalt.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://bamboosalt.sajilodigital.com.np" || "https://bamboosalt.vercel.app"),
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://arunbamboosalt.com",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://bamboosalt.sajilodigital.com.np" || "https://bamboosalt.vercel.app",
   },
   openGraph: {
     title: "Premium Bamboo Salt from Nepal | Arun Bamboo Salt",
     description:
       "Premium quality bamboo salt crafted by Arun Neupane in Nepal. 100% natural, 9x roasted in bamboo — detoxify, alkalize, and elevate your wellness naturally.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://arunbamboosalt.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://bamboosalt.sajilodigital.com.np" || "https://bamboosalt.vercel.app",
     siteName: "Arun Bamboo Salt",
     images: [
       {
