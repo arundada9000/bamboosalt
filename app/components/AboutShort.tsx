@@ -48,7 +48,7 @@ export default function AboutShort() {
             </div>
             
             <p className="text-lg text-stone-600 leading-relaxed font-medium">
-              At <strong className="text-stone-900">Nepal Bamboo Salt Pvt. Ltd.</strong>, we specialize in producing high-quality bamboo salt inspired by traditional Korean methods and adapted with Himalayan purity. 
+              At <strong className="text-stone-900">Arun Bamboo Salt</strong>, we specialize in producing high-quality bamboo salt inspired by traditional Korean methods and adapted with Himalayan purity. 
             </p>
             <p className="text-stone-500 leading-relaxed">
               Our salt is roasted in bamboo at high temperatures, a meticulous process that enhances its mineral content and maximizing detoxifying properties for your ultimate wellness.

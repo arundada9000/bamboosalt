@@ -33,7 +33,7 @@ export default function Products() {
             Select Your Bamboo Salt
           </h2>
           <p className="text-stone-500 text-lg leading-relaxed">
-            Discover the ancient healing power of Nepal Bamboo Salt, roasted to
+            Discover the ancient healing power of Arun Bamboo Salt, roasted to
             perfection using pine-wood fires.
           </p>
         </div>

@@ -1,13 +1,13 @@
-# Nepal Bamboo Salt — Official Landing Page
+# Arun Bamboo Salt — Premium Bamboo Salt Landing Page
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 
-Premium product landing page for **Nepal Bamboo Salt Pvt. Ltd.** — educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
+Premium product landing page for **Arun Bamboo Salt** — educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
 
-**Live**: [bamboosalt.sajilodigital.com.np](https://bamboosalt.sajilodigital.com.np)
+**Live**: [arunbamboosalt.com](https://arunbamboosalt.com)
 
 ---
 

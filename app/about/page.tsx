@@ -5,9 +5,9 @@ import { Leaf, Eye, Target, Mountain, HandHeart } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | Nepal Bamboo Salt",
+  title: "About | Arun Bamboo Salt — Premium Bamboo Salt from Nepal",
   description:
-    "Nepal Bamboo Salt Pvt. Ltd. produces premium bamboo salt using eco-friendly, traditional Korean methods combined with pure Himalayan resources.",
+    "Learn the story behind Arun Bamboo Salt. Traditional Korean roasting methods meet pure Himalayan sea salt for the ultimate mineral-rich wellness product.",
 };
 
 export default function AboutPage() {
@@ -34,9 +34,8 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
               About{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0d49a] to-[#d4a853]">
-                Nepal Bamboo Salt
-              </span>{" "}
-              Pvt. Ltd.
+                Arun Bamboo Salt
+              </span> 
             </h1>
             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed font-medium">
               We are a Nepal-based company dedicated to producing premium bamboo

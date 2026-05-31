@@ -15,9 +15,9 @@ import { AUTHOR, getWhatsAppUrl } from "../data/contact";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shop | Nepal Bamboo Salt — Coming Soon",
+  title: "Shop | Arun Bamboo Salt — Order Premium Bamboo Salt Online",
   description:
-    "Our online store is coming soon. In the meantime, order via WhatsApp or call us directly.",
+    "Browse Arun Bamboo Salt products — 3x, 6x, and 9x roasted bamboo salt. Order via WhatsApp for delivery across Nepal.",
 };
 
 function WhatsAppIcon() {
@@ -96,7 +96,7 @@ export default function ShopPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={getWhatsAppUrl(AUTHOR.phoneRaw, "Please notify me when the Nepal Bamboo Salt online store is live")}
+              href={getWhatsAppUrl(AUTHOR.phoneRaw, "Please notify me when the Arun Bamboo Salt online store is live")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 bg-[#296B46] hover:bg-[#36895a]"

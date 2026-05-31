@@ -32,7 +32,7 @@ I work with React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB. My roo
 | **Code for Change Nepal** | Full-stack platform for Nepal's national IT student community | React 19 · Vite · Express · MongoDB | [Live](https://codeforchangenepal.com) · [GitHub](https://github.com/arundada9000/Code-for-Change) |
 | **Nagrik Sahayata Pradali** | Internal case management system for Area Police Office, Butwal | Next.js · PostgreSQL · Prisma · Docker | Private deployment |
 | **Sajilo Digital Website** | Cinematic company platform with terminal navigation | Next.js 16 · GSAP · Framer Motion | [Live](https://sajilodigital.com.np) |
-| **Nepal Bamboo Salt** | Product landing page for Nepal Bamboo Salt Pvt. Ltd. | Next.js · Tailwind v4 | [Live](https://bamboosalt.sajilodigital.com.np) |
+| **Arun Bamboo Salt** | Product landing page for Arun Bamboo Salt | Next.js · Tailwind v4 | [Live](https://bamboosalt.sajilodigital.com.np) |
 | **SajiloStore** | Config-driven e-commerce template | Next.js · Framer Motion | [Live](https://statictemplate.sajilodigital.com.np) |
 
 ---
@@ -48,14 +48,11 @@ I work with React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB. My roo
 - **YouTube**: [youtube.com/@arundada9000](https://youtube.com/@arundada9000)
 - **Phone/WhatsApp**: [+977-9811420975](https://wa.me/9779811420975)
 
-### Nepal Bamboo Salt Pvt. Ltd.
+### Arun Bamboo Salt
 
-- **Company**: Nepal Bamboo Salt Pvt. Ltd.
-- **Email**: [info@nplbamboosalt.com](mailto:info@nplbamboosalt.com)
-- **Address**: Bardiya Badhaiyatal-08, Nepal
-- **Phone**: [+977-9851216564](tel:+9779851216564)
-- **WhatsApp**: [+977-9704741630](https://wa.me/9779704741630)
-- **Alternate**: [+977-9858040765](tel:+9779858040765)
+- **Brand**: Arun Bamboo Salt
+- **Email**: [arunneupane0000@gmail.com](mailto:arunneupane0000@gmail.com)
+- **Phone/WhatsApp**: [+977-9811420975](https://wa.me/9779811420975)
 
 _The data above is the canonical source used by the site components via `app/data/contact.ts`._
 

@@ -33,7 +33,7 @@ export default function CTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href={getWhatsAppUrl(AUTHOR.phoneRaw, "I want to order Nepal Bamboo Salt")}
+            href={getWhatsAppUrl(AUTHOR.phoneRaw, "I want to order Arun Bamboo Salt")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1da851] text-white px-8 py-4 rounded-full font-bold text-base transition-all duration-300 shadow-xl active:scale-95 w-full sm:w-auto justify-center"

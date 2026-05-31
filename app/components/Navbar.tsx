@@ -148,7 +148,7 @@ export default function Navbar() {
               <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden ring-2 ring-[#296B46]/20 group-hover:ring-[#296B46]/60 group-hover:shadow-[0_0_15px_rgba(41,107,70,0.3)] transition-all duration-300">
                 <Image
                   src="/images/circular-logo.png"
-                  alt="Nepal Bamboo Salt"
+                  alt="Arun Bamboo Salt"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   priority
@@ -156,7 +156,7 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block leading-none">
                 <span className="font-extrabold text-base lg:text-lg text-stone-900 block group-hover:text-[#296B46] transition-colors">
-                  Nepal Bamboo Salt
+                  Arun Bamboo Salt
                 </span>
               </div>
             </Link>

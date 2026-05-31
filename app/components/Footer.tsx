@@ -28,20 +28,20 @@ export default function Footer() {
               <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-white/20 group-hover:ring-[#296B46] transition-all">
                 <Image
                   src="/images/circular-logo.png"
-                  alt="Nepal Bamboo Salt"
+                  alt="Arun Bamboo Salt"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
                 <span className="font-extrabold text-lg leading-tight block">
-                  Nepal Bamboo Salt
+                  Arun Bamboo Salt
                 </span>
                 <span
                   className="text-xs font-semibold tracking-widest uppercase"
                   style={{ color: "#3a9962" }}
                 >
-                  Pvt. Ltd.
+                  Premium
                 </span>
               </div>
             </Link>
@@ -233,7 +233,7 @@ export default function Footer() {
           }}
         >
           <p>
-            &copy; {new Date().getFullYear()} Nepal Bamboo Salt. All
+            &copy; {new Date().getFullYear()} Arun Bamboo Salt. All
             rights reserved.
           </p>
         </div>
