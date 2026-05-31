@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { BUSINESS } from "../data/contact";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -128,25 +129,25 @@ export default function Footer() {
                   className="text-sm leading-snug"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
-                  Bardiya badhaiyatal-08, Nepal
+                  {BUSINESS.address}
                 </span>
               </li>
               <li className="flex flex-col gap-2">
                 <a
-                  href="tel:+9779851216564"
+                  href={`tel:${BUSINESS.phoneRaw.main}`}
                   className="text-sm flex items-center gap-2 hover:text-[#3a9962] transition-colors"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
                   <Phone className="w-3.5 h-3.5" style={{ color: "#3a9962" }} />{" "}
-                  +977-9851216564
+                  {BUSINESS.phones.main}
                 </a>
                 <a
-                  href="tel:+9779858040765"
+                  href={`tel:${BUSINESS.phoneRaw.alternate}`}
                   className="text-sm flex items-center gap-2 hover:text-[#3a9962] transition-colors"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
                   <Phone className="w-3.5 h-3.5" style={{ color: "#3a9962" }} />{" "}
-                  +977-9704741630
+                  {BUSINESS.phones.whatsapp}
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -155,11 +156,11 @@ export default function Footer() {
                   style={{ color: "#3a9962" }}
                 />
                 <a
-                  href="mailto:info@nplbamboosalt.com"
+                  href={`mailto:${BUSINESS.email}`}
                   className="text-sm hover:text-[#3a9962] transition-colors"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
-                  info@nplbamboosalt.com
+                  {BUSINESS.email}
                 </a>
               </li>
             </ul>
@@ -175,7 +176,7 @@ export default function Footer() {
           }}
         >
           <p>
-            &copy; {new Date().getFullYear()} Nepal Bamboo Salt Pvt. Ltd. All
+            &copy; {new Date().getFullYear()} {BUSINESS.nameFull} All
             rights reserved.
           </p>
           <div className="flex gap-6">

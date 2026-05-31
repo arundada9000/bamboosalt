@@ -3,59 +3,78 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 
-A premium, production-ready landing page built for **Nepal Bamboo Salt Pvt. Ltd.** to educate customers on the ancient benefits of roasted bamboo salt and generate direct sales via WhatsApp.
+Premium product landing page for **Nepal Bamboo Salt Pvt. Ltd.** — educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
 
-Visit at : bamboosalt.sajilodigital.com.np
+**Live**: [bamboosalt.sajilodigital.com.np](https://bamboosalt.sajilodigital.com.np)
 
 ---
 
-## Features & Implementation
+## Pages
 
-- **Next.js App Router**: Lightning-fast static rendering (`/` and `/shop`) optimized for SEO and Core Web Vitals.
-- **Tailwind CSS v4**: Built entirely with the newest Tailwind engine and strict custom design tokens (`@theme` in `globals.css`) matching the brand's primary green (`#296B46`).
-- **Lucide Icons**: Crisp, professional SVG icons across the interface.
-- **Fully Responsive**: Mobile-first design with a custom animated hamburger menu and scroll-aware navigation.
-- **WhatsApp Integration**: Dynamic links pre-filling customer intent automatically based on the product selected.
-- **Phase 2 Ready**: The `/shop` page acts as an expansive teaser for upcoming eCommerce features.
+| Route | Description |
+| ----- | ----------- |
+| `/` | Home page with Hero, Products, Benefits, Process, and CTA sections |
+| `/shop` | Product catalog & online store teaser (Phase 2 coming soon) |
+| `/about` | Company story, vision & mission |
 
-## 🛠️ Tech Stack & Structure
+## Features
 
-- **Core**: Next.js (App Router), React, TypeScript.
-- **Styling**: Tailwind v4 (`app/globals.css`).
-- **Data Source**: Centralized product mock data located at `app/data/products.ts`.
-- **Components**: Modular and reusable sections (`Navbar`, `Hero`, `Products`, `Trust`, `Benefits`, `Process`, `CTA`, `Footer`) housed in `app/components`.
+- **Next.js App Router** — Static rendering for `/` and `/shop`, optimized for SEO and Core Web Vitals
+- **Tailwind CSS v4** — Custom design tokens via `@theme` in `globals.css` matching brand green (`#296B46`)
+- **Lucide Icons** — Consistent SVG icon set across the interface
+- **Responsive** — Mobile-first with animated hamburger menu and scroll-aware nav
+- **WhatsApp Integration** — Dynamic deep links with pre-filled order intents per product
+- **Centralized Contact Data** — Phone numbers, email, and address sourced from `app/data/contact.ts`
 
-## 🌱 SEO & Meta Configuration
+## Tech Stack
 
-This project uses comprehensive Next.js file-based metadata out-of-the-box:
+- **Framework**: Next.js 16 (App Router), React 19, TypeScript 5
+- **Styling**: Tailwind CSS v4
+- **Icons**: lucide-react
+- **Data**: Centralized business contact (`app/data/contact.ts`) and product catalog (`app/data/products.ts`)
+- **Components**: Modular sections — Navbar, Hero, Products, Benefits, Process, Trust, CTA, Footer
 
-- **`app/layout.tsx`**: Contains the full SEO configuration including `openGraph`, `twitter` cards, and keywords.
-- **`app/icon.png` / `app/apple-icon.png`**: Auto-injected as favicons.
-- **`public/images/og-image.png`**: Custom-crafted social sharing map.
+## Project Structure
 
-## Running Locally
+```
+app/
+├── about/page.tsx          # About page
+├── components/             # Reusable UI components
+│   ├── AboutShort.tsx
+│   ├── Benefits.tsx
+│   ├── CTA.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navbar.tsx
+│   ├── Process.tsx
+│   ├── Products.tsx
+│   └── Trust.tsx
+├── data/
+│   ├── contact.ts          # Business contact info (source of truth)
+│   └── products.ts         # Product catalog data
+├── shop/page.tsx           # Shop / store page
+├── globals.css             # Tailwind theme + global styles
+├── layout.tsx              # Root layout + SEO metadata
+└── page.tsx                # Home page entry
+```
 
-1. **Install Dependencies**:
+## Getting Started
 
-   ```bash
-   npm install
-   ```
+```bash
+# Install dependencies
+npm install
 
-2. **Start the Development Server**:
+# Start development server
+npm run dev
 
-   ```bash
-   npm run dev
-   ```
+# Production build
+npm run build
+npm start
+```
 
-3. **View Application**:
-   Open [http://localhost:3000](http://localhost:3000) with your browser.
-
-4. **Production Build**:
-   ```bash
-   npm run build
-   npm start
-   ```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -66,5 +85,5 @@ This project uses comprehensive Next.js file-based metadata out-of-the-box:
     <img src="/images/SajiloDigital.png" alt="Sajilo Digital Logo" width="120" />
   </a>
   <h3>Proudly Designed & Developed by <a href="https://sajilodigital.com.np" style="color: #296B46; text-decoration: none;">Sajilo Digital</a></h3>
-  <p>YOUR VISION , OUR INNOVATION</p>
+  <p>YOUR VISION, OUR INNOVATION</p>
 </div>

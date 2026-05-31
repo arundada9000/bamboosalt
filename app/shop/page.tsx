@@ -11,6 +11,7 @@ import {
   WalletCards,
 } from "lucide-react";
 import { products } from "../data/products";
+import { BUSINESS, getWhatsAppUrl } from "../data/contact";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,9 +31,8 @@ function WhatsAppIcon() {
 import Navbar from "../components/Navbar";
 
 export default function ShopPage() {
-  const getWhatsAppUrl = (productName: string) => {
-    const message = encodeURIComponent(`Hi! I want to order ${productName}`);
-    return `https://wa.me/9779704741630?text=${message}`;
+  const getProductWhatsAppUrl = (productName: string) => {
+    return getWhatsAppUrl(BUSINESS.phoneRaw.whatsapp, `Hi! I want to order ${productName}`);
   };
 
   return (
@@ -96,7 +96,7 @@ export default function ShopPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://wa.me/9779851216564?text=Please%20notify%20me%20when%20the%20Nepal%20Bamboo%20Salt%20online%20store%20is%20live"
+              href={getWhatsAppUrl(BUSINESS.phoneRaw.main, "Please notify me when the Nepal Bamboo Salt online store is live")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 bg-[#296B46] hover:bg-[#36895a]"
@@ -105,7 +105,7 @@ export default function ShopPage() {
               Notify Me When Live
             </a>
             <a
-              href="tel:+9779851216564"
+              href={`tel:${BUSINESS.phoneRaw.main}`}
               className="flex items-center gap-2 text-white border border-white/25 px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 hover:bg-white/10"
             >
               <Phone className="w-4 h-4" />
@@ -164,7 +164,7 @@ export default function ShopPage() {
                   {product.weight}
                 </p>
                 <a
-                  href={getWhatsAppUrl(product.name)}
+                  href={getProductWhatsAppUrl(product.name)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white py-3 rounded-xl font-bold text-sm transition-all active:scale-95"

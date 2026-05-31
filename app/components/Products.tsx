@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Weight, Star, ArrowRight, ShoppingBag } from "lucide-react";
 import { products } from "../data/products";
+import { BUSINESS, getWhatsAppUrl } from "../data/contact";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -16,9 +17,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export default function Products() {
-  const getWhatsAppUrl = (productName: string) => {
-    const message = encodeURIComponent(`Hi! I want to order ${productName}`);
-    return `https://wa.me/9779704741630?text=${message}`;
+  const getProductWhatsAppUrl = (productName: string) => {
+    return getWhatsAppUrl(BUSINESS.phoneRaw.whatsapp, `Hi! I want to order ${productName}`);
   };
 
   return (
@@ -90,7 +90,7 @@ export default function Products() {
                 {/* CTA Buttons */}
                 <div className="grid md:grid-cols-2 gap-3">
                   <a
-                    href={getWhatsAppUrl(product.name)}
+                    href={getProductWhatsAppUrl(product.name)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#1da851] transition-all duration-300 active:scale-95 shadow-sm"
