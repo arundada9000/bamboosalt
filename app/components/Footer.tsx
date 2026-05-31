@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail } from "lucide-react";
-import { BUSINESS, AUTHOR } from "../data/contact";
+import { Phone, Mail } from "lucide-react";
+import { AUTHOR } from "../data/contact";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -117,37 +117,27 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-bold text-white text-sm uppercase tracking-widest mb-6">
-              Contact Us
+              Developed by
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin
-                  className="w-4 h-4 mt-0.5 flex-shrink-0"
-                  style={{ color: "#3a9962" }}
-                />
                 <span
-                  className="text-sm leading-snug"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
+                  className="text-sm leading-snug font-bold"
+                  style={{ color: "rgba(255,255,255,0.8)" }}
                 >
-                  {BUSINESS.address}
+                  {AUTHOR.name}
                 </span>
               </li>
               <li className="flex flex-col gap-2">
                 <a
-                  href={`tel:${BUSINESS.phoneRaw.main}`}
+                  href={`https://wa.me/${AUTHOR.phoneRaw}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm flex items-center gap-2 hover:text-[#3a9962] transition-colors"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
                   <Phone className="w-3.5 h-3.5" style={{ color: "#3a9962" }} />{" "}
-                  {BUSINESS.phones.main}
-                </a>
-                <a
-                  href={`tel:${BUSINESS.phoneRaw.alternate}`}
-                  className="text-sm flex items-center gap-2 hover:text-[#3a9962] transition-colors"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  <Phone className="w-3.5 h-3.5" style={{ color: "#3a9962" }} />{" "}
-                  {BUSINESS.phones.whatsapp}
+                  {AUTHOR.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -156,11 +146,22 @@ export default function Footer() {
                   style={{ color: "#3a9962" }}
                 />
                 <a
-                  href={`mailto:${BUSINESS.email}`}
+                  href={`mailto:${AUTHOR.email}`}
                   className="text-sm hover:text-[#3a9962] transition-colors"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
-                  {BUSINESS.email}
+                  {AUTHOR.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={AUTHOR.portfolio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-[#3a9962] transition-colors"
+                  style={{ color: "rgba(255,255,255,0.55)" }}
+                >
+                  Portfolio
                 </a>
               </li>
             </ul>
@@ -176,33 +177,8 @@ export default function Footer() {
           }}
         >
           <p>
-            &copy; {new Date().getFullYear()} {BUSINESS.nameFull}. All
+            &copy; {new Date().getFullYear()} Nepal Bamboo Salt. All
             rights reserved.
-          </p>
-          <p>
-            Developed by{" "}
-            <a
-              href={AUTHOR.portfolio}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#3a9962] transition-colors"
-            >
-              {AUTHOR.name}
-            </a>{" "}
-            &mdash;{" "}
-            <a
-              href={`tel:+${AUTHOR.phoneRaw}`}
-              className="hover:text-[#3a9962] transition-colors"
-            >
-              {AUTHOR.phone}
-            </a>{" "}
-            &middot;{" "}
-            <a
-              href={`mailto:${AUTHOR.email}`}
-              className="hover:text-[#3a9962] transition-colors"
-            >
-              Email
-            </a>
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ import {
   WalletCards,
 } from "lucide-react";
 import { products } from "../data/products";
-import { BUSINESS, getWhatsAppUrl } from "../data/contact";
+import { AUTHOR, getWhatsAppUrl } from "../data/contact";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ import Navbar from "../components/Navbar";
 
 export default function ShopPage() {
   const getProductWhatsAppUrl = (productName: string) => {
-    return getWhatsAppUrl(BUSINESS.phoneRaw.whatsapp, `Hi! I want to order ${productName}`);
+    return getWhatsAppUrl(AUTHOR.phoneRaw, `Hi! I want to order ${productName}`);
   };
 
   return (
@@ -96,7 +96,7 @@ export default function ShopPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={getWhatsAppUrl(BUSINESS.phoneRaw.main, "Please notify me when the Nepal Bamboo Salt online store is live")}
+              href={getWhatsAppUrl(AUTHOR.phoneRaw, "Please notify me when the Nepal Bamboo Salt online store is live")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 bg-[#296B46] hover:bg-[#36895a]"
@@ -105,7 +105,7 @@ export default function ShopPage() {
               Notify Me When Live
             </a>
             <a
-              href={`tel:${BUSINESS.phoneRaw.main}`}
+              href={`tel:+${AUTHOR.phoneRaw}`}
               className="flex items-center gap-2 text-white border border-white/25 px-6 py-3 rounded-full font-bold text-sm transition-all active:scale-95 hover:bg-white/10"
             >
               <Phone className="w-4 h-4" />

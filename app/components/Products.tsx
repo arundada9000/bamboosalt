@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Weight, Star, ArrowRight, ShoppingBag } from "lucide-react";
 import { products } from "../data/products";
-import { BUSINESS, getWhatsAppUrl } from "../data/contact";
+import { AUTHOR, getWhatsAppUrl } from "../data/contact";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -18,7 +18,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export default function Products() {
   const getProductWhatsAppUrl = (productName: string) => {
-    return getWhatsAppUrl(BUSINESS.phoneRaw.whatsapp, `Hi! I want to order ${productName}`);
+    return getWhatsAppUrl(AUTHOR.phoneRaw, `Hi! I want to order ${productName}`);
   };
 
   return (

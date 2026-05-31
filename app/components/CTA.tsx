@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, ShoppingBag } from "lucide-react";
-import { BUSINESS, getWhatsAppUrl } from "../data/contact";
+import { AUTHOR, getWhatsAppUrl } from "../data/contact";
 
 function WhatsAppIcon() {
   return (
@@ -33,7 +33,7 @@ export default function CTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href={getWhatsAppUrl(BUSINESS.phoneRaw.whatsapp, "I want to order Nepal Bamboo Salt")}
+            href={getWhatsAppUrl(AUTHOR.phoneRaw, "I want to order Nepal Bamboo Salt")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1da851] text-white px-8 py-4 rounded-full font-bold text-base transition-all duration-300 shadow-xl active:scale-95 w-full sm:w-auto justify-center"
@@ -51,7 +51,7 @@ export default function CTA() {
           </Link>
 
           <a
-            href={`tel:${BUSINESS.phoneRaw.main}`}
+            href={`tel:+${AUTHOR.phoneRaw}`}
             className="flex items-center gap-3 text-white border border-white/30 bg-white/10 hover:bg-white/20 px-8 py-4 rounded-full font-bold text-base transition-all duration-300 active:scale-95 w-full sm:w-auto justify-center backdrop-blur-sm"
           >
             <Phone className="w-5 h-5" />
