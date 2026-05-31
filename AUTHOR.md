@@ -39,11 +39,25 @@ I work with React, Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB. My roo
 
 ## Contact
 
+### Developer
+
+- **Name**: Arun Neupane
 - **Email**: [arunneupane0000@gmail.com](mailto:arunneupane0000@gmail.com)
 - **Portfolio**: [arunneupane.netlify.app](https://arunneupane.netlify.app)
 - **LinkedIn**: [linkedin.com/in/arundada9000](https://linkedin.com/in/arundada9000)
 - **YouTube**: [youtube.com/@arundada9000](https://youtube.com/@arundada9000)
 - **Phone/WhatsApp**: [+977-9811420975](https://wa.me/9779811420975)
+
+### Nepal Bamboo Salt Pvt. Ltd.
+
+- **Company**: Nepal Bamboo Salt Pvt. Ltd.
+- **Email**: [info@nplbamboosalt.com](mailto:info@nplbamboosalt.com)
+- **Address**: Bardiya Badhaiyatal-08, Nepal
+- **Phone**: [+977-9851216564](tel:+9779851216564)
+- **WhatsApp**: [+977-9704741630](https://wa.me/9779704741630)
+- **Alternate**: [+977-9858040765](tel:+9779858040765)
+
+_The data above is the canonical source used by the site components via `app/data/contact.ts`._
 
 ---
 

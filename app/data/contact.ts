@@ -1,3 +1,16 @@
+/// Canonical source: AUTHOR.md (see "Contact" section)
+/// Keep this file in sync with the data in AUTHOR.md.
+
+export const AUTHOR = {
+  name: "Arun Neupane",
+  email: "arunneupane0000@gmail.com",
+  portfolio: "https://arunneupane.netlify.app",
+  linkedin: "https://linkedin.com/in/arundada9000",
+  youtube: "https://youtube.com/@arundada9000",
+  phone: "+977-9811420975",
+  phoneRaw: "9779811420975",
+} as const;
+
 export const BUSINESS = {
   name: "Nepal Bamboo Salt",
   nameFull: "Nepal Bamboo Salt Pvt. Ltd.",
