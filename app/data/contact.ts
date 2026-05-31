@@ -4,6 +4,8 @@ export const AUTHOR = {
   portfolio: "https://arunneupane.netlify.app",
   linkedin: "https://linkedin.com/in/arundada9000",
   youtube: "https://youtube.com/@arundada9000",
+  facebook: "https://facebook.com/arundada9000",
+  instagram: "https://instagram.com/arundada9000",
   phone: "+977-9811420975",
   phoneRaw: "9779811420975",
 } as const;
