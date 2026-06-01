@@ -1,4 +1,4 @@
-# Arun Bamboo Salt — Premium Bamboo Salt Landing Page
+﻿# Arun Bamboo Salt - Premium Bamboo Salt Landing Page
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-Custom%20Non--Commercial-blue)](LICENSE)
 
-Premium product landing page for **Arun Bamboo Salt** — educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
+Premium product landing page for **Arun Bamboo Salt** - educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
 
 **Live**: [arunbamboosalt.com](https://arunbamboosalt.com)
 
@@ -22,12 +22,12 @@ Premium product landing page for **Arun Bamboo Salt** — educating customers on
 
 ## Features
 
-- **Next.js App Router** — Static rendering for `/` and `/shop`, optimized for SEO and Core Web Vitals
-- **Tailwind CSS v4** — Custom design tokens via `@theme` in `globals.css` matching brand green (`#296B46`)
-- **Lucide Icons** — Consistent SVG icon set across the interface
-- **Responsive** — Mobile-first with animated hamburger menu and scroll-aware nav
-- **WhatsApp Integration** — Dynamic deep links with pre-filled order intents per product
-- **Centralized Contact Data** — Phone numbers, email, and address sourced from `app/data/contact.ts`
+- **Next.js App Router** - Static rendering for `/` and `/shop`, optimized for SEO and Core Web Vitals
+- **Tailwind CSS v4** - Custom design tokens via `@theme` in `globals.css` matching brand green (`#296B46`)
+- **Lucide Icons** - Consistent SVG icon set across the interface
+- **Responsive** - Mobile-first with animated hamburger menu and scroll-aware nav
+- **WhatsApp Integration** - Dynamic deep links with pre-filled order intents per product
+- **Centralized Contact Data** - Phone numbers, email, and address sourced from `app/data/contact.ts`
 
 ## Tech Stack
 
@@ -35,7 +35,7 @@ Premium product landing page for **Arun Bamboo Salt** — educating customers on
 - **Styling**: Tailwind CSS v4
 - **Icons**: lucide-react
 - **Data**: Centralized business contact (`app/data/contact.ts`) and product catalog (`app/data/products.ts`)
-- **Components**: Modular sections — Navbar, Hero, Products, Benefits, Process, Trust, CTA, Footer
+- **Components**: Modular sections - Navbar, Hero, Products, Benefits, Process, Trust, CTA, Footer
 
 ## Project Structure
 
