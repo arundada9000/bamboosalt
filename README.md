@@ -4,6 +4,7 @@
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-Custom%20Non--Commercial-blue)](LICENSE)
 
 Premium product landing page for **Arun Bamboo Salt** — educating customers on the traditional benefits of roasted bamboo salt and enabling direct sales via WhatsApp.
 
